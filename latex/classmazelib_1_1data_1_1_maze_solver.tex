@@ -1,0 +1,108 @@
+\hypertarget{classmazelib_1_1data_1_1_maze_solver}{\section{mazelib.\-data.\-Maze\-Solver Class Reference}
+\label{classmazelib_1_1data_1_1_maze_solver}\index{mazelib.\-data.\-Maze\-Solver@{mazelib.\-data.\-Maze\-Solver}}
+}
+Inheritance diagram for mazelib.\-data.\-Maze\-Solver\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmazelib_1_1data_1_1_maze_solver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmazelib_1_1data_1_1_maze_solver_a9d109ec788a834fb4af13e8d15690c1f}{Maze\-Solver} (\hyperlink{classmazelib_1_1data_1_1_maze}{Maze} maze, \hyperlink{interfacemazelib_1_1data_1_1_heuristic}{Heuristic} heuristic)
+\item 
+\hyperlink{classmazelib_1_1data_1_1_maze_solver_a45b8264a170235e86e9e2d304670d090}{Maze\-Solver} (String string\-Maze, \hyperlink{interfacemazelib_1_1data_1_1_heuristic}{Heuristic} heuristic)
+\item 
+abstract List$<$ \hyperlink{classmazelib_1_1data_1_1_node}{Node} $>$ \hyperlink{classmazelib_1_1data_1_1_maze_solver_a009bd983cdccfb7c845d3da8fabf02d6}{solve\-Maze} ()
+\item 
+String \hyperlink{classmazelib_1_1data_1_1_maze_solver_a314017420b6dc62fff186502d7e21dc2}{draw\-Solution} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_ade82d3652ee86f02ff0f16f8ddff5ea0}{\hyperlink{classmazelib_1_1data_1_1_maze}{Maze} {\bfseries maze}}\label{classmazelib_1_1data_1_1_maze_solver_ade82d3652ee86f02ff0f16f8ddff5ea0}
+
+\item 
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a8f57c9e54a2e368c429b11c5ba7707af}{final \hyperlink{interfacemazelib_1_1data_1_1_heuristic}{Heuristic} {\bfseries heuristic}}\label{classmazelib_1_1data_1_1_maze_solver_a8f57c9e54a2e368c429b11c5ba7707af}
+
+\item 
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a089ceaab209320b6df17dd27f4d58eae}{Map$<$ \hyperlink{classmazelib_1_1data_1_1_node}{Node}, Boolean $>$ {\bfseries solution\-Nodes}}\label{classmazelib_1_1data_1_1_maze_solver_a089ceaab209320b6df17dd27f4d58eae}
+
+\item 
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_ac6f12a1f0ad8e35ffae101a5ec7cabfd}{final long {\bfseries C\-O\-S\-T\-\_\-\-S\-T\-R\-A\-I\-G\-H\-T} = 100l}\label{classmazelib_1_1data_1_1_maze_solver_ac6f12a1f0ad8e35ffae101a5ec7cabfd}
+
+\item 
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a161ad7fae780c4e07703d87508657304}{final long {\bfseries C\-O\-S\-T\-\_\-\-D\-I\-A\-G\-O\-N\-A\-L} = 141l}\label{classmazelib_1_1data_1_1_maze_solver_a161ad7fae780c4e07703d87508657304}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Template method for \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} solving algorithms \begin{DoxyAuthor}{Author}
+Timur Reziapov \href{mailto:reziapo1@illinois.edu}{\tt reziapo1@illinois.\-edu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Wednesday, September 5, 2012 15\-:00 P\-M 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a9d109ec788a834fb4af13e8d15690c1f}{\index{mazelib\-::data\-::\-Maze\-Solver@{mazelib\-::data\-::\-Maze\-Solver}!Maze\-Solver@{Maze\-Solver}}
+\index{Maze\-Solver@{Maze\-Solver}!mazelib::data::MazeSolver@{mazelib\-::data\-::\-Maze\-Solver}}
+\subsubsection[{Maze\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-Maze\-Solver.\-Maze\-Solver (
+\begin{DoxyParamCaption}
+\item[{{\bf Maze}}]{maze, }
+\item[{{\bf Heuristic}}]{heuristic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_solver_a9d109ec788a834fb4af13e8d15690c1f}
+Constructor to be used by derived classes. 
+\begin{DoxyParams}{Parameters}
+{\em maze} & the \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} to work on \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a45b8264a170235e86e9e2d304670d090}{\index{mazelib\-::data\-::\-Maze\-Solver@{mazelib\-::data\-::\-Maze\-Solver}!Maze\-Solver@{Maze\-Solver}}
+\index{Maze\-Solver@{Maze\-Solver}!mazelib::data::MazeSolver@{mazelib\-::data\-::\-Maze\-Solver}}
+\subsubsection[{Maze\-Solver}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-Maze\-Solver.\-Maze\-Solver (
+\begin{DoxyParamCaption}
+\item[{String}]{string\-Maze, }
+\item[{{\bf Heuristic}}]{heuristic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_solver_a45b8264a170235e86e9e2d304670d090}
+Constructor to be used by derived classes. 
+\begin{DoxyParams}{Parameters}
+{\em string\-Maze} & the string representation of the \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} to solve \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a314017420b6dc62fff186502d7e21dc2}{\index{mazelib\-::data\-::\-Maze\-Solver@{mazelib\-::data\-::\-Maze\-Solver}!draw\-Solution@{draw\-Solution}}
+\index{draw\-Solution@{draw\-Solution}!mazelib::data::MazeSolver@{mazelib\-::data\-::\-Maze\-Solver}}
+\subsubsection[{draw\-Solution}]{\setlength{\rightskip}{0pt plus 5cm}String mazelib.\-data.\-Maze\-Solver.\-draw\-Solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_solver_a314017420b6dc62fff186502d7e21dc2}
+This function draws the maze with solution path. \begin{DoxyReturn}{Returns}
+the string representation of \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} with solution path, null if \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} hasn't been solved yet 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_solver_a009bd983cdccfb7c845d3da8fabf02d6}{\index{mazelib\-::data\-::\-Maze\-Solver@{mazelib\-::data\-::\-Maze\-Solver}!solve\-Maze@{solve\-Maze}}
+\index{solve\-Maze@{solve\-Maze}!mazelib::data::MazeSolver@{mazelib\-::data\-::\-Maze\-Solver}}
+\subsubsection[{solve\-Maze}]{\setlength{\rightskip}{0pt plus 5cm}abstract List$<${\bf Node}$>$ mazelib.\-data.\-Maze\-Solver.\-solve\-Maze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classmazelib_1_1data_1_1_maze_solver_a009bd983cdccfb7c845d3da8fabf02d6}
+Main algorithm method that each non-\/abstract derived class must define. \begin{DoxyReturn}{Returns}
+the List of solution Nodes 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classmazelib_1_1data_1_1_a_star_algorithm_aaa690f9111cf47f54a10c84c28cfcba4}{mazelib.\-data.\-A\-Star\-Algorithm}, and \hyperlink{classmazelib_1_1data_1_1_dijkstras_algorithm_abe1208942d2a0397235aef4737990ca2}{mazelib.\-data.\-Dijkstras\-Algorithm}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/mazelib/data/Maze\-Solver.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{classmazelib_1_1data_1_1_a_star_algorithm}{\section{mazelib.\-data.\-A\-Star\-Algorithm Class Reference}
+\label{classmazelib_1_1data_1_1_a_star_algorithm}\index{mazelib.\-data.\-A\-Star\-Algorithm@{mazelib.\-data.\-A\-Star\-Algorithm}}
+}
+Inheritance diagram for mazelib.\-data.\-A\-Star\-Algorithm\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmazelib_1_1data_1_1_a_star_algorithm}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmazelib_1_1data_1_1_a_star_algorithm_af14ad7c669df46dd8c866223305a1f02}{A\-Star\-Algorithm} (\hyperlink{classmazelib_1_1data_1_1_maze}{Maze} maze, \hyperlink{interfacemazelib_1_1data_1_1_heuristic}{Heuristic} heuristic)
+\item 
+\hyperlink{classmazelib_1_1data_1_1_a_star_algorithm_a391f71803973c0d1241c5232dadee49f}{A\-Star\-Algorithm} (String string\-Maze, \hyperlink{interfacemazelib_1_1data_1_1_heuristic}{Heuristic} heuristic)
+\item 
+List$<$ \hyperlink{classmazelib_1_1data_1_1_node}{Node} $>$ \hyperlink{classmazelib_1_1data_1_1_a_star_algorithm_aaa690f9111cf47f54a10c84c28cfcba4}{solve\-Maze} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Reziapov \href{mailto:reziapo1@illinois.edu}{\tt reziapo1@illinois.\-edu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Wednesday, September 5, 2012 15\-:00 P\-M 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmazelib_1_1data_1_1_a_star_algorithm_af14ad7c669df46dd8c866223305a1f02}{\index{mazelib\-::data\-::\-A\-Star\-Algorithm@{mazelib\-::data\-::\-A\-Star\-Algorithm}!A\-Star\-Algorithm@{A\-Star\-Algorithm}}
+\index{A\-Star\-Algorithm@{A\-Star\-Algorithm}!mazelib::data::AStarAlgorithm@{mazelib\-::data\-::\-A\-Star\-Algorithm}}
+\subsubsection[{A\-Star\-Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-A\-Star\-Algorithm.\-A\-Star\-Algorithm (
+\begin{DoxyParamCaption}
+\item[{{\bf Maze}}]{maze, }
+\item[{{\bf Heuristic}}]{heuristic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_a_star_algorithm_af14ad7c669df46dd8c866223305a1f02}
+Constructor for A\-Star\-Agorithm Object. 
+\begin{DoxyParams}{Parameters}
+{\em maze} & the \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} to solve \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmazelib_1_1data_1_1_a_star_algorithm_a391f71803973c0d1241c5232dadee49f}{\index{mazelib\-::data\-::\-A\-Star\-Algorithm@{mazelib\-::data\-::\-A\-Star\-Algorithm}!A\-Star\-Algorithm@{A\-Star\-Algorithm}}
+\index{A\-Star\-Algorithm@{A\-Star\-Algorithm}!mazelib::data::AStarAlgorithm@{mazelib\-::data\-::\-A\-Star\-Algorithm}}
+\subsubsection[{A\-Star\-Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-A\-Star\-Algorithm.\-A\-Star\-Algorithm (
+\begin{DoxyParamCaption}
+\item[{String}]{string\-Maze, }
+\item[{{\bf Heuristic}}]{heuristic}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_a_star_algorithm_a391f71803973c0d1241c5232dadee49f}
+Constructor for A\-Star\-Agorithm Object. 
+\begin{DoxyParams}{Parameters}
+{\em string\-Maze} & the string representation of the \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} to solve \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmazelib_1_1data_1_1_a_star_algorithm_aaa690f9111cf47f54a10c84c28cfcba4}{\index{mazelib\-::data\-::\-A\-Star\-Algorithm@{mazelib\-::data\-::\-A\-Star\-Algorithm}!solve\-Maze@{solve\-Maze}}
+\index{solve\-Maze@{solve\-Maze}!mazelib::data::AStarAlgorithm@{mazelib\-::data\-::\-A\-Star\-Algorithm}}
+\subsubsection[{solve\-Maze}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Node}$>$ mazelib.\-data.\-A\-Star\-Algorithm.\-solve\-Maze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmazelib_1_1data_1_1_a_star_algorithm_aaa690f9111cf47f54a10c84c28cfcba4}
+The main function of the algorithm. \begin{DoxyReturn}{Returns}
+List of Nodes that represent the solution to this maze, null if there is no path from start \hyperlink{classmazelib_1_1data_1_1_node}{Node} to end \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmazelib_1_1data_1_1_maze_solver_a009bd983cdccfb7c845d3da8fabf02d6}{mazelib.\-data.\-Maze\-Solver}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/mazelib/data/A\-Star\-Algorithm.\-java\end{DoxyCompactItemize}

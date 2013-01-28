@@ -1,0 +1,149 @@
+\hypertarget{classmazelib_1_1data_1_1_maze}{\section{mazelib.\-data.\-Maze Class Reference}
+\label{classmazelib_1_1data_1_1_maze}\index{mazelib.\-data.\-Maze@{mazelib.\-data.\-Maze}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmazelib_1_1data_1_1_maze_a8fbac7d6a990f2a4dc0f7a6e9548e021}{Maze} (int width, int height)
+\item 
+\hyperlink{classmazelib_1_1data_1_1_maze_a6108ac1177218d391d9441a14211c338}{Maze} (String maze)
+\item 
+String \hyperlink{classmazelib_1_1data_1_1_maze_a01357f91230e3ab0f5b5d2bae333775b}{draw\-Maze} ()
+\item 
+boolean \hyperlink{classmazelib_1_1data_1_1_maze_a5abf2461af90321c99b60d6d7b6baa2e}{in\-Bounds} (\hyperlink{classmazelib_1_1data_1_1_position}{Position} position)
+\item 
+\hyperlink{classmazelib_1_1data_1_1_node}{Node} \hyperlink{classmazelib_1_1data_1_1_maze_a4f1d235fd8c7bc3f8afab258b511087f}{get\-Node} (\hyperlink{classmazelib_1_1data_1_1_position}{Position} position)
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_maze_ad6d361bb62158a9613f29108651963d4}{get\-Width} ()
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_maze_a119104038e76e9793cce077726685e0c}{get\-Height} ()
+\item 
+\hyperlink{classmazelib_1_1data_1_1_node}{Node} \hyperlink{classmazelib_1_1data_1_1_maze_acb1b8d241380c174d45540d6185c151d}{get\-Start\-Node} ()
+\item 
+\hyperlink{classmazelib_1_1data_1_1_node}{Node} \hyperlink{classmazelib_1_1data_1_1_maze_a72da72ea9a5d7acfea2d759fa6df83c0}{get\-End\-Node} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Timur Reziapov \href{mailto:reziapo1@illinois.edu}{\tt reziapo1@illinois.\-edu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Monday, September 3, 2012, 18\-:00 P\-M 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmazelib_1_1data_1_1_maze_a8fbac7d6a990f2a4dc0f7a6e9548e021}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!Maze@{Maze}}
+\index{Maze@{Maze}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{Maze}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-Maze.\-Maze (
+\begin{DoxyParamCaption}
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a8fbac7d6a990f2a4dc0f7a6e9548e021}
+Constructs a \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} with random squares. \begin{DoxyNote}{Note}
+all Nodes are impassable until \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} generation function is called  width and height will at least be 2 
+\end{DoxyNote}
+\hypertarget{classmazelib_1_1data_1_1_maze_a6108ac1177218d391d9441a14211c338}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!Maze@{Maze}}
+\index{Maze@{Maze}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{Maze}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-Maze.\-Maze (
+\begin{DoxyParamCaption}
+\item[{String}]{maze}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a6108ac1177218d391d9441a14211c338}
+Constructs a \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} given a string. 
+\begin{DoxyParams}{Parameters}
+{\em maze} & the String representation of a \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} object, assumed to be in draw\-Maze's format \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmazelib_1_1data_1_1_maze_a01357f91230e3ab0f5b5d2bae333775b}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!draw\-Maze@{draw\-Maze}}
+\index{draw\-Maze@{draw\-Maze}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{draw\-Maze}]{\setlength{\rightskip}{0pt plus 5cm}String mazelib.\-data.\-Maze.\-draw\-Maze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a01357f91230e3ab0f5b5d2bae333775b}
+This function creates a String representation of this maze. Key\-: \char`\"{}\-X\char`\"{} -\/ impassable/wall \hyperlink{classmazelib_1_1data_1_1_node}{Node} \char`\"{}\#\char`\"{} -\/ \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} border \char`\"{}\-S\char`\"{} -\/ start \hyperlink{classmazelib_1_1data_1_1_node}{Node} \char`\"{}\-E\char`\"{} -\/ end \hyperlink{classmazelib_1_1data_1_1_node}{Node} \char`\"{} \char`\"{} (space) -\/ passable \hyperlink{classmazelib_1_1data_1_1_node}{Node} \begin{DoxyReturn}{Returns}
+String representation of this \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_a72da72ea9a5d7acfea2d759fa6df83c0}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!get\-End\-Node@{get\-End\-Node}}
+\index{get\-End\-Node@{get\-End\-Node}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{get\-End\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} mazelib.\-data.\-Maze.\-get\-End\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a72da72ea9a5d7acfea2d759fa6df83c0}
+\begin{DoxyReturn}{Returns}
+the end \hyperlink{classmazelib_1_1data_1_1_node}{Node} for this \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_a119104038e76e9793cce077726685e0c}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Maze.\-get\-Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a119104038e76e9793cce077726685e0c}
+\begin{DoxyReturn}{Returns}
+height of this \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_a4f1d235fd8c7bc3f8afab258b511087f}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!get\-Node@{get\-Node}}
+\index{get\-Node@{get\-Node}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{get\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} mazelib.\-data.\-Maze.\-get\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a4f1d235fd8c7bc3f8afab258b511087f}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & the \hyperlink{classmazelib_1_1data_1_1_position}{Position} of the desired \hyperlink{classmazelib_1_1data_1_1_node}{Node} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmazelib_1_1data_1_1_node}{Node} at parameter position if in maze bounds, null if out of maze bounds 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_acb1b8d241380c174d45540d6185c151d}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!get\-Start\-Node@{get\-Start\-Node}}
+\index{get\-Start\-Node@{get\-Start\-Node}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{get\-Start\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} mazelib.\-data.\-Maze.\-get\-Start\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_acb1b8d241380c174d45540d6185c151d}
+\begin{DoxyReturn}{Returns}
+the starting \hyperlink{classmazelib_1_1data_1_1_node}{Node} for this \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_ad6d361bb62158a9613f29108651963d4}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Maze.\-get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_ad6d361bb62158a9613f29108651963d4}
+\begin{DoxyReturn}{Returns}
+width of this \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_maze_a5abf2461af90321c99b60d6d7b6baa2e}{\index{mazelib\-::data\-::\-Maze@{mazelib\-::data\-::\-Maze}!in\-Bounds@{in\-Bounds}}
+\index{in\-Bounds@{in\-Bounds}!mazelib::data::Maze@{mazelib\-::data\-::\-Maze}}
+\subsubsection[{in\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}boolean mazelib.\-data.\-Maze.\-in\-Bounds (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_maze_a5abf2461af90321c99b60d6d7b6baa2e}
+Checks if parameter is in the bounds of this \hyperlink{classmazelib_1_1data_1_1_maze}{Maze}. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x coordinate to be checked \\
+\hline
+{\em y} & the y coordinate to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether x and y are in the bounds of this \hyperlink{classmazelib_1_1data_1_1_node}{Node}'s \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/mazelib/data/Maze.\-java\end{DoxyCompactItemize}

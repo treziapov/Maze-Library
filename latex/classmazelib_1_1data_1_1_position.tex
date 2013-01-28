@@ -1,0 +1,120 @@
+\hypertarget{classmazelib_1_1data_1_1_position}{\section{mazelib.\-data.\-Position Class Reference}
+\label{classmazelib_1_1data_1_1_position}\index{mazelib.\-data.\-Position@{mazelib.\-data.\-Position}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmazelib_1_1data_1_1_position_a4a68ad54bacb89324df2891d342822b3}{Position} (int x, int y)
+\item 
+void \hyperlink{classmazelib_1_1data_1_1_position_a36e7b44fb51095864dcf4f269afb20d7}{add\-Coordinates} (int x, int y)
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_position_a590d7e0c43088379914764005947d721}{get\-X} ()
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_position_a8c9c9a427f0d8b0e9f9ef87ff591048b}{get\-Y} ()
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_position_a99573983ef4b609c8b70374d143d9f47}{hash\-Code} ()
+\item 
+boolean \hyperlink{classmazelib_1_1data_1_1_position_a8903a19cec1cadb6099f9cd6d9a145d0}{equals} (Object other)
+\item 
+boolean \hyperlink{classmazelib_1_1data_1_1_position_a948853bc43f341fc1ed91b7c5809dd21}{is\-Diagonal} (\hyperlink{classmazelib_1_1data_1_1_position}{Position} adjacent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Helper class that will hold each \hyperlink{classmazelib_1_1data_1_1_node}{Node}'s x and y coordinates in parent \hyperlink{classmazelib_1_1data_1_1_maze}{Maze}. \begin{DoxyAuthor}{Author}
+Timur Reziapov \href{mailto:reziapo1@illinois.edu}{\tt reziapo1@illinois.\-edu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sunday, September 2, 2012 18\-:00 P\-M 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmazelib_1_1data_1_1_position_a4a68ad54bacb89324df2891d342822b3}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!Position@{Position}}
+\index{Position@{Position}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{Position}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-Position.\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a4a68ad54bacb89324df2891d342822b3}
+Constructs a \hyperlink{classmazelib_1_1data_1_1_position}{Position}. This constructor is public because it is a helper class that we will also use for testing purposes. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the \hyperlink{classmazelib_1_1data_1_1_node}{Node}'s row index in \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} \\
+\hline
+{\em y} & the \hyperlink{classmazelib_1_1data_1_1_node}{Node}'s column index in \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmazelib_1_1data_1_1_position_a36e7b44fb51095864dcf4f269afb20d7}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!add\-Coordinates@{add\-Coordinates}}
+\index{add\-Coordinates@{add\-Coordinates}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{add\-Coordinates}]{\setlength{\rightskip}{0pt plus 5cm}void mazelib.\-data.\-Position.\-add\-Coordinates (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a36e7b44fb51095864dcf4f269afb20d7}
+Helper function, adds parameters to respective coordinates of this \hyperlink{classmazelib_1_1data_1_1_position}{Position}. Parameters can and will be negative. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the number to be added to this \hyperlink{classmazelib_1_1data_1_1_position}{Position}'s x member \\
+\hline
+{\em y} & the number to be added to this \hyperlink{classmazelib_1_1data_1_1_position}{Position}'s y member \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmazelib_1_1data_1_1_position_a8903a19cec1cadb6099f9cd6d9a145d0}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!equals@{equals}}
+\index{equals@{equals}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean mazelib.\-data.\-Position.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a8903a19cec1cadb6099f9cd6d9a145d0}
+Checks if other Object is another \hyperlink{classmazelib_1_1data_1_1_position}{Position} with same fields. \begin{DoxyReturn}{Returns}
+true if other is a \hyperlink{classmazelib_1_1data_1_1_position}{Position} and has same fields. false otherwise 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_position_a590d7e0c43088379914764005947d721}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!get\-X@{get\-X}}
+\index{get\-X@{get\-X}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{get\-X}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Position.\-get\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a590d7e0c43088379914764005947d721}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmazelib_1_1data_1_1_position}{Position}'s x coordinate 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_position_a8c9c9a427f0d8b0e9f9ef87ff591048b}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!get\-Y@{get\-Y}}
+\index{get\-Y@{get\-Y}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{get\-Y}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Position.\-get\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a8c9c9a427f0d8b0e9f9ef87ff591048b}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classmazelib_1_1data_1_1_position}{Position}'s y coordinate 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_position_a99573983ef4b609c8b70374d143d9f47}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Position.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a99573983ef4b609c8b70374d143d9f47}
+Returns a hash code for this \hyperlink{classmazelib_1_1data_1_1_position}{Position}, which is unique to other Positions with different coordinates. \begin{DoxyReturn}{Returns}
+hash 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_position_a948853bc43f341fc1ed91b7c5809dd21}{\index{mazelib\-::data\-::\-Position@{mazelib\-::data\-::\-Position}!is\-Diagonal@{is\-Diagonal}}
+\index{is\-Diagonal@{is\-Diagonal}!mazelib::data::Position@{mazelib\-::data\-::\-Position}}
+\subsubsection[{is\-Diagonal}]{\setlength{\rightskip}{0pt plus 5cm}boolean mazelib.\-data.\-Position.\-is\-Diagonal (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{adjacent}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_position_a948853bc43f341fc1ed91b7c5809dd21}
+\begin{DoxyReturn}{Returns}
+true if adjacent is diagonal to this \hyperlink{classmazelib_1_1data_1_1_position}{Position}, false otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/mazelib/data/Position.\-java\end{DoxyCompactItemize}

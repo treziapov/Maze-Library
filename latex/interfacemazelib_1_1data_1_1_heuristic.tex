@@ -1,0 +1,49 @@
+\hypertarget{interfacemazelib_1_1data_1_1_heuristic}{\section{mazelib.\-data.\-Heuristic Interface Reference}
+\label{interfacemazelib_1_1data_1_1_heuristic}\index{mazelib.\-data.\-Heuristic@{mazelib.\-data.\-Heuristic}}
+}
+Inheritance diagram for mazelib.\-data.\-Heuristic\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.848185cm]{interfacemazelib_1_1data_1_1_heuristic}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+long \hyperlink{interfacemazelib_1_1data_1_1_heuristic_a740b90bd253ed4ef33c7f18f8011215f}{calculate\-Distance} (\hyperlink{classmazelib_1_1data_1_1_node}{Node} origin\-Node, \hyperlink{classmazelib_1_1data_1_1_node}{Node} target\-Node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface to facilitate pluggable Algorithm Heuristics. \begin{DoxyAuthor}{Author}
+Timur Reziapov \href{mailto:reziapo1@illinois.edu}{\tt reziapo1@illinois.\-edu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sunday, September 9, 2012 18\-:00 P\-M 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacemazelib_1_1data_1_1_heuristic_a740b90bd253ed4ef33c7f18f8011215f}{\index{mazelib\-::data\-::\-Heuristic@{mazelib\-::data\-::\-Heuristic}!calculate\-Distance@{calculate\-Distance}}
+\index{calculate\-Distance@{calculate\-Distance}!mazelib::data::Heuristic@{mazelib\-::data\-::\-Heuristic}}
+\subsubsection[{calculate\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}long mazelib.\-data.\-Heuristic.\-calculate\-Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{origin\-Node, }
+\item[{{\bf Node}}]{target\-Node}
+\end{DoxyParamCaption}
+)}}\label{interfacemazelib_1_1data_1_1_heuristic_a740b90bd253ed4ef33c7f18f8011215f}
+Method that all implementing classes must define. 
+\begin{DoxyParams}{Parameters}
+{\em origin\-Node} & the \hyperlink{classmazelib_1_1data_1_1_node}{Node} to calculate distance from \\
+\hline
+{\em target\-Node} & the \hyperlink{classmazelib_1_1data_1_1_node}{Node} to calculate distance to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the distance from origin to target according to the \hyperlink{interfacemazelib_1_1data_1_1_heuristic}{Heuristic} 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/mazelib/data/Heuristic.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data
+END
+MazeInterfaceModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fa12-cs242/!svn/ver/6065/reziapo1/Assignment1.3/src/mazelib/data/MazeInterfaceModel.java
+END
+DiagonalDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/DiagonalDistance.java
+END
+Heuristic.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/Heuristic.java
+END
+Position.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/Position.java
+END
+MazeInterfaceControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/fa12-cs242/!svn/ver/6065/reziapo1/Assignment1.3/src/mazelib/data/MazeInterfaceControl.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/Node.java
+END
+Maze.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/Maze.java
+END
+MazeInterfaceView.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fa12-cs242/!svn/ver/6065/reziapo1/Assignment1.3/src/mazelib/data/MazeInterfaceView.java
+END
+AStarAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/AStarAlgorithm.java
+END
+MazeConsole.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/MazeConsole.java
+END
+Glue.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/Glue.java
+END
+ManhattanDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/ManhattanDistance.java
+END
+EuclideanDistance.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/EuclideanDistance.java
+END
+DijkstrasAlgorithm.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/DijkstrasAlgorithm.java
+END
+MazeSolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fa12-cs242/!svn/ver/6065/reziapo1/Assignment1.3/src/mazelib/data/MazeSolver.java
+END
+ExampleGUI.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/fa12-cs242/!svn/ver/6026/reziapo1/Assignment1.3/src/mazelib/data/ExampleGUI.java
+END

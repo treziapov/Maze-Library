@@ -1,0 +1,263 @@
+\hypertarget{classmazelib_1_1data_1_1_node}{\section{mazelib.\-data.\-Node Class Reference}
+\label{classmazelib_1_1data_1_1_node}\index{mazelib.\-data.\-Node@{mazelib.\-data.\-Node}}
+}
+Inheritance diagram for mazelib.\-data.\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmazelib_1_1data_1_1_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_node_a6d0332471e8e795262b54c42a7f72cd3}{compare\-To} (\hyperlink{classmazelib_1_1data_1_1_node}{Node} other)
+\item 
+List$<$ \hyperlink{classmazelib_1_1data_1_1_node}{Node} $>$ \hyperlink{classmazelib_1_1data_1_1_node_a7f1c31cd172078f0d2160639ceae4d6c}{get\-Adjacent\-Nodes} (boolean diagonal)
+\item 
+boolean \hyperlink{classmazelib_1_1data_1_1_node_abbb9f4db2a23abe1b5ab79aabf632c9c}{can\-Reach} (\hyperlink{classmazelib_1_1data_1_1_node}{Node} neighbor\-Node)
+\item 
+long \hyperlink{classmazelib_1_1data_1_1_node_a2ad7aa3cd7165ffff7634ebf6e362549}{get\-Accumulated\-Cost} ()
+\item 
+void \hyperlink{classmazelib_1_1data_1_1_node_a74f88136c6d4c5953db07872b951ae4b}{set\-Accumulated\-Cost} (long accumulated\-Cost)
+\item 
+long \hyperlink{classmazelib_1_1data_1_1_node_a3e9f05a1e91e8bc6879c2f600e819d7b}{get\-Estimated\-Cost} ()
+\item 
+void \hyperlink{classmazelib_1_1data_1_1_node_a8405b28d885d50e4bcfa4ef21c5f0942}{set\-Estimated\-Cost} (long estimated\-Cost)
+\item 
+long \hyperlink{classmazelib_1_1data_1_1_node_a1cc1fcda8a17f24bc72f810c0f76b02e}{get\-Total\-Cost} ()
+\item 
+\hyperlink{classmazelib_1_1data_1_1_node}{Node} \hyperlink{classmazelib_1_1data_1_1_node_a320a1eae56bbede15573be0499556465}{get\-Parent\-Node} ()
+\item 
+void \hyperlink{classmazelib_1_1data_1_1_node_a1da6285dea279ef17d514cc8a8f8cbfd}{set\-Parent\-Node} (\hyperlink{classmazelib_1_1data_1_1_node}{Node} parent\-Node)
+\item 
+\hyperlink{classmazelib_1_1data_1_1_position}{Position} \hyperlink{classmazelib_1_1data_1_1_node_acb069d8e4430f951bebe4c0188e222bc}{get\-Position} ()
+\item 
+boolean \hyperlink{classmazelib_1_1data_1_1_node_aa54c4931c5ae776275ea2b9128858eec}{get\-Is\-Passable} ()
+\item 
+\hyperlink{classmazelib_1_1data_1_1_maze}{Maze} \hyperlink{classmazelib_1_1data_1_1_node_aafef828ac17d63ff39d0ae27cf2d761d}{get\-Parent\-Maze} ()
+\item 
+int \hyperlink{classmazelib_1_1data_1_1_node_a9ff18335087c35e4b6fa7b9796f5f7ef}{hash\-Code} ()
+\item 
+boolean \hyperlink{classmazelib_1_1data_1_1_node_a5921df3fa5ccb2c3ff328039f7924b93}{equals} (Object other)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmazelib_1_1data_1_1_node_abb9bb1179d4fa3877d267126a72146fd}{Node} (\hyperlink{classmazelib_1_1data_1_1_position}{Position} position, boolean passable, \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} parent\-Maze)
+\item 
+void \hyperlink{classmazelib_1_1data_1_1_node_a0e95a8e452791ec769b56bb7d5cf2132}{set\-Passable} (boolean passable)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a block in a \hyperlink{classmazelib_1_1data_1_1_maze}{Maze}. \begin{DoxyAuthor}{Author}
+Timur Reziapov \href{mailto:reziapo1@illinois.edu}{\tt reziapo1@illinois.\-edu} 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Sunday, September 2, 2012 17\-:00 P\-M 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classmazelib_1_1data_1_1_node_abb9bb1179d4fa3877d267126a72146fd}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!Node@{Node}}
+\index{Node@{Node}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}mazelib.\-data.\-Node.\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Position}}]{position, }
+\item[{boolean}]{passable, }
+\item[{{\bf Maze}}]{parent\-Maze}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classmazelib_1_1data_1_1_node_abb9bb1179d4fa3877d267126a72146fd}
+Constructs a \hyperlink{classmazelib_1_1data_1_1_node}{Node}. Protected because we only want to allow creation of Nodes from within a \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} object. 
+\begin{DoxyParams}{Parameters}
+{\em position} & the \hyperlink{classmazelib_1_1data_1_1_position}{Position} of \hyperlink{classmazelib_1_1data_1_1_node}{Node} in a \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} \\
+\hline
+{\em passable} & determines if \hyperlink{classmazelib_1_1data_1_1_node}{Node} is a wall or not \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classmazelib_1_1data_1_1_node_abbb9f4db2a23abe1b5ab79aabf632c9c}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!can\-Reach@{can\-Reach}}
+\index{can\-Reach@{can\-Reach}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{can\-Reach}]{\setlength{\rightskip}{0pt plus 5cm}boolean mazelib.\-data.\-Node.\-can\-Reach (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{neighbor\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_abbb9f4db2a23abe1b5ab79aabf632c9c}
+Function to check if target\-Node is reachable from this \hyperlink{classmazelib_1_1data_1_1_node}{Node}. 
+\begin{DoxyParams}{Parameters}
+{\em target\-Node} & the \hyperlink{classmazelib_1_1data_1_1_node}{Node} to check reaching to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if target \hyperlink{classmazelib_1_1data_1_1_node}{Node} is reachable from this \hyperlink{classmazelib_1_1data_1_1_node}{Node}, false otherwise 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a6d0332471e8e795262b54c42a7f72cd3}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!compare\-To@{compare\-To}}
+\index{compare\-To@{compare\-To}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{compare\-To}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Node.\-compare\-To (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a6d0332471e8e795262b54c42a7f72cd3}
+other \hyperlink{classmazelib_1_1data_1_1_node}{Node} is from the same parent \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} \begin{DoxyReturn}{Returns}
+1 if this \hyperlink{classmazelib_1_1data_1_1_node}{Node} has a higher total cost than parameter \hyperlink{classmazelib_1_1data_1_1_node}{Node}, 0 if this \hyperlink{classmazelib_1_1data_1_1_node}{Node} and parameter \hyperlink{classmazelib_1_1data_1_1_node}{Node} have the same total cost, and -\/1 if this \hyperlink{classmazelib_1_1data_1_1_node}{Node} has a smaller total cost than parameter \hyperlink{classmazelib_1_1data_1_1_node}{Node}. 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a5921df3fa5ccb2c3ff328039f7924b93}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!equals@{equals}}
+\index{equals@{equals}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean mazelib.\-data.\-Node.\-equals (
+\begin{DoxyParamCaption}
+\item[{Object}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a5921df3fa5ccb2c3ff328039f7924b93}
+\begin{DoxyReturn}{Returns}
+true if other is a \hyperlink{classmazelib_1_1data_1_1_node}{Node} with equal fields false otherwise 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a2ad7aa3cd7165ffff7634ebf6e362549}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Accumulated\-Cost@{get\-Accumulated\-Cost}}
+\index{get\-Accumulated\-Cost@{get\-Accumulated\-Cost}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Accumulated\-Cost}]{\setlength{\rightskip}{0pt plus 5cm}long mazelib.\-data.\-Node.\-get\-Accumulated\-Cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a2ad7aa3cd7165ffff7634ebf6e362549}
+\begin{DoxyReturn}{Returns}
+the accumulated cost for this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a7f1c31cd172078f0d2160639ceae4d6c}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Adjacent\-Nodes@{get\-Adjacent\-Nodes}}
+\index{get\-Adjacent\-Nodes@{get\-Adjacent\-Nodes}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Adjacent\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf Node}$>$ mazelib.\-data.\-Node.\-get\-Adjacent\-Nodes (
+\begin{DoxyParamCaption}
+\item[{boolean}]{diagonal}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a7f1c31cd172078f0d2160639ceae4d6c}
+This function is used to get this \hyperlink{classmazelib_1_1data_1_1_node}{Node}'s adjacent Nodes. 
+\begin{DoxyParams}{Parameters}
+{\em diagonal} & whether to include or not diagonal neighbors in return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the list of non-\/diagonal adjacent Nodes 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a3e9f05a1e91e8bc6879c2f600e819d7b}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Estimated\-Cost@{get\-Estimated\-Cost}}
+\index{get\-Estimated\-Cost@{get\-Estimated\-Cost}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Estimated\-Cost}]{\setlength{\rightskip}{0pt plus 5cm}long mazelib.\-data.\-Node.\-get\-Estimated\-Cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a3e9f05a1e91e8bc6879c2f600e819d7b}
+\begin{DoxyReturn}{Returns}
+the estimated cost for this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_aa54c4931c5ae776275ea2b9128858eec}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Is\-Passable@{get\-Is\-Passable}}
+\index{get\-Is\-Passable@{get\-Is\-Passable}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Is\-Passable}]{\setlength{\rightskip}{0pt plus 5cm}boolean mazelib.\-data.\-Node.\-get\-Is\-Passable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_aa54c4931c5ae776275ea2b9128858eec}
+\begin{DoxyReturn}{Returns}
+if this \hyperlink{classmazelib_1_1data_1_1_node}{Node} is passable or impassable 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_aafef828ac17d63ff39d0ae27cf2d761d}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Parent\-Maze@{get\-Parent\-Maze}}
+\index{get\-Parent\-Maze@{get\-Parent\-Maze}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Parent\-Maze}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Maze} mazelib.\-data.\-Node.\-get\-Parent\-Maze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_aafef828ac17d63ff39d0ae27cf2d761d}
+\begin{DoxyReturn}{Returns}
+the parent \hyperlink{classmazelib_1_1data_1_1_maze}{Maze} of this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a320a1eae56bbede15573be0499556465}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Parent\-Node@{get\-Parent\-Node}}
+\index{get\-Parent\-Node@{get\-Parent\-Node}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Parent\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node} mazelib.\-data.\-Node.\-get\-Parent\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a320a1eae56bbede15573be0499556465}
+\begin{DoxyReturn}{Returns}
+the parent \hyperlink{classmazelib_1_1data_1_1_node}{Node} of this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_acb069d8e4430f951bebe4c0188e222bc}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Position} mazelib.\-data.\-Node.\-get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_acb069d8e4430f951bebe4c0188e222bc}
+\begin{DoxyReturn}{Returns}
+the \hyperlink{classmazelib_1_1data_1_1_position}{Position} of this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a1cc1fcda8a17f24bc72f810c0f76b02e}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!get\-Total\-Cost@{get\-Total\-Cost}}
+\index{get\-Total\-Cost@{get\-Total\-Cost}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{get\-Total\-Cost}]{\setlength{\rightskip}{0pt plus 5cm}long mazelib.\-data.\-Node.\-get\-Total\-Cost (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a1cc1fcda8a17f24bc72f810c0f76b02e}
+\begin{DoxyReturn}{Returns}
+total cost of this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a9ff18335087c35e4b6fa7b9796f5f7ef}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!hash\-Code@{hash\-Code}}
+\index{hash\-Code@{hash\-Code}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{hash\-Code}]{\setlength{\rightskip}{0pt plus 5cm}int mazelib.\-data.\-Node.\-hash\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a9ff18335087c35e4b6fa7b9796f5f7ef}
+Returns an integer that corresponds to this \hyperlink{classmazelib_1_1data_1_1_node}{Node}'s \hyperlink{classmazelib_1_1data_1_1_position}{Position}, which is unique to any other \hyperlink{classmazelib_1_1data_1_1_node}{Node} with a difference \hyperlink{classmazelib_1_1data_1_1_position}{Position}. \begin{DoxyReturn}{Returns}
+a hash for this \hyperlink{classmazelib_1_1data_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{classmazelib_1_1data_1_1_node_a74f88136c6d4c5953db07872b951ae4b}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!set\-Accumulated\-Cost@{set\-Accumulated\-Cost}}
+\index{set\-Accumulated\-Cost@{set\-Accumulated\-Cost}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{set\-Accumulated\-Cost}]{\setlength{\rightskip}{0pt plus 5cm}void mazelib.\-data.\-Node.\-set\-Accumulated\-Cost (
+\begin{DoxyParamCaption}
+\item[{long}]{accumulated\-Cost}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a74f88136c6d4c5953db07872b951ae4b}
+Sets the accumulated cost for this \hyperlink{classmazelib_1_1data_1_1_node}{Node}. 
+\begin{DoxyParams}{Parameters}
+{\em accumulated\-Cost} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmazelib_1_1data_1_1_node_a8405b28d885d50e4bcfa4ef21c5f0942}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!set\-Estimated\-Cost@{set\-Estimated\-Cost}}
+\index{set\-Estimated\-Cost@{set\-Estimated\-Cost}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{set\-Estimated\-Cost}]{\setlength{\rightskip}{0pt plus 5cm}void mazelib.\-data.\-Node.\-set\-Estimated\-Cost (
+\begin{DoxyParamCaption}
+\item[{long}]{estimated\-Cost}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a8405b28d885d50e4bcfa4ef21c5f0942}
+Sets the estimated cost for this \hyperlink{classmazelib_1_1data_1_1_node}{Node}. 
+\begin{DoxyParams}{Parameters}
+{\em estimated\-Cost} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmazelib_1_1data_1_1_node_a1da6285dea279ef17d514cc8a8f8cbfd}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!set\-Parent\-Node@{set\-Parent\-Node}}
+\index{set\-Parent\-Node@{set\-Parent\-Node}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{set\-Parent\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void mazelib.\-data.\-Node.\-set\-Parent\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}}]{parent\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmazelib_1_1data_1_1_node_a1da6285dea279ef17d514cc8a8f8cbfd}
+Sets the parent \hyperlink{classmazelib_1_1data_1_1_node}{Node} for this \hyperlink{classmazelib_1_1data_1_1_node}{Node}. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmazelib_1_1data_1_1_node_a0e95a8e452791ec769b56bb7d5cf2132}{\index{mazelib\-::data\-::\-Node@{mazelib\-::data\-::\-Node}!set\-Passable@{set\-Passable}}
+\index{set\-Passable@{set\-Passable}!mazelib::data::Node@{mazelib\-::data\-::\-Node}}
+\subsubsection[{set\-Passable}]{\setlength{\rightskip}{0pt plus 5cm}void mazelib.\-data.\-Node.\-set\-Passable (
+\begin{DoxyParamCaption}
+\item[{boolean}]{passable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}}\label{classmazelib_1_1data_1_1_node_a0e95a8e452791ec769b56bb7d5cf2132}
+Sets this \hyperlink{classmazelib_1_1data_1_1_node}{Node} as passable or impassable 
+\begin{DoxyParams}{Parameters}
+{\em passable} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/mazelib/data/Node.\-java\end{DoxyCompactItemize}
